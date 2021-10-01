@@ -2,6 +2,6 @@
 
 int main()
 {
-    printf("HAPPY NEW YEAR");
+    printf("Hello World..!");
     return 0;
 }    
