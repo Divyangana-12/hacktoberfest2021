@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 int main()
-{
-    int arr1[100];
-    int arr2[100];
+{   
+    
+    int arr1[n];
     int n, i;
 
     printf("Input the size of array : ");
@@ -13,16 +13,14 @@ int main()
     printf("Input %d elements in the array :\n", n);
     for (i = 0; i < n; i++)
     {
-        printf("Element no %d:", i);
         scanf("%d", &arr1[i]);
     }
-    int f=n-1;
-    for (i=0;i <n ;i++)
+    
+    for (i=n-1;i>=0 ;i--)
     {
-        arr2[i]=arr1[f--];
+        printf("%d", arr1[i]);
     }
-    for (i=0;i<n;i++){
-        printf("%d ",arr2[i]);
+    return 0;
     }
-}
+
 
