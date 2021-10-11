@@ -3,25 +3,32 @@
 
 int main()
 {
-    int arr1[100];
-    int arr2[100];
     int n, i;
 
     printf("Input the size of array : ");
     scanf("%d", &n);
 
+    int f=n-1;
+
+    int arr1[n];  // Declare two arrays according to the size we want
+    int arr2[n];
+
     printf("Input %d elements in the array :\n", n);
-    for (i = 0; i < n; i++)
+
+    for (i = 0; i < n; i++)  //Get values from User
     {
-        printf("Element no %d:", i);
+        printf("Element no %d:", i+1);
         scanf("%d", &arr1[i]);
     }
-    int f=n-1;
-    for (i=0;i <n ;i++)
+
+    for (i=0;i <n ;i++) 
     {
         arr2[i]=arr1[f--];
     }
-    for (i=0;i<n;i++){
+
+    printf("\nReverse Order of Array :\n\t");
+    for (i=0;i<n;i++)  //print the reversed elements of array
+    { 
         printf("%d ",arr2[i]);
     }
 }
